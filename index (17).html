@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Hub - Your Daily Tools, All in One Place</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <!-- Poppins Font CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.2.6/index.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .tool-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Top Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Tools Wonder
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="#tools" class="text-gray-600 hover:text-blue-600">Tools</a>
+                <a href="mailto:toolsHub@gmail.com" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="mailto:toolsHub@gmail.com" class="text-sm text-gray-500">toolsHub@gmail.com</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2 bg-white shadow-sm">
+            <a href="#" class="block text-gray-600 hover:text-blue-600 py-1">Home</a>
+            <a href="#tools" class="block text-gray-600 hover:text-blue-600 py-1">Tools</a>
+            <a href="mailto:toolsHub@gmail.com" class="block text-gray-600 hover:text-blue-600 py-1">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section class="text-center my-12 md:my-20">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">Your Daily Tools, All in One Place</h1>
+            <p class="text-lg md:text-xl text-gray-500 mt-4 max-w-3xl mx-auto">Convert, calculate, compress, and simplify your everyday tasks — fast and free.</p>
+            <a href="#tools" class="cta-button inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg mt-8 text-lg hover:bg-blue-700 shadow-lg hover:shadow-xl">
+                Explore Tools
+            </a>
+            <div class="flex justify-center items-center space-x-6 md:space-x-12 mt-12 text-gray-500">
+                <div class="text-center">
+                    <!-- Heroicons: Photo -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-1.586-1.586a2 2 0 00-2.828 0L6 16" />
+                    </svg>
+                    <span class="text-sm">Image</span>
+                </div>
+                <div class="text-center">
+                    <!-- Heroicons: Document -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span class="text-sm">Document</span>
+                </div>
+                <div class="text-center">
+                    <!-- Heroicons: Code -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4-4-4" />
+                    </svg>
+                    <span class="text-sm">Code</span>
+                </div>
+                <div class="text-center">
+                    <!-- Heroicons: Film -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.55a2 2 0 01.9 1.75 2 2 0 01-.9 1.75L15 14M3 8v8a2 2 0 002 2h5.586a1 1 0 00.707-.293l3.414-3.414a1 1 0 000-1.414L11.293 5.293A1 1 0 0010.586 5H5a2 2 0 00-2 2z" />
+                    </svg>
+                    <span class="text-sm">Video</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Bar -->
+        <section class="my-16">
+            <div class="relative max-w-2xl mx-auto">
+                <input type="search" id="tool-search" placeholder="Search a tool…" class="w-full py-4 pl-6 pr-12 text-gray-700 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out shadow-sm focus:shadow-md">
+                <!-- Heroicons: Magnifying Glass -->
+                <svg class="w-6 h-6 text-gray-400 absolute right-4 top-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+        </section>
+
+        <div id="tools">
+            <!-- Image Tools -->
+            <section class="tool-section my-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">🖼 Image Tools</h2>
+                <p class="text-gray-500 mt-2">Edit, convert, and optimize your images effortlessly.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Arrows-Right-Left -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0-6H6a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2v-8a2 2 0 00-2-2H8z" />
+                        </svg>
+                        <h3 class="text-lg font-bold text-gray-800">Image Converter</h3>
+                        <p class="text-gray-500 text-sm mt-1">Change image formats like PNG, JPG, WEBP.</p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:text-blue-800 transition duration-200">Use Tool &rarr;</a>
+                    </div>
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Scale -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l2-2h14l2 2v12l-2 2H5l-2-2V6zm0 0v6" />
+                        </svg>
+                        <h3 class="text-lg font-bold text-gray-800">Image Compressor</h3>
+                        <p class="text-gray-500 text-sm mt-1">Reduce image file size without losing quality.</p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:text-blue-800 transition duration-200">Use Tool &rarr;</a>
+                    </div>
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Arrows-Pointing-In -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8v12l4-4M3 8l4-4m0 0h14m-14 0H5a2 2 0 00-2 2v12a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2H11" />
+                        </svg>
+                        <h3 class="text-lg font-bold text-gray-800">Image Resizer</h3>
+                        <p class="text-gray-500 text-sm mt-1">Adjust the dimensions of your images.</p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:text-blue-800 transition duration-200">Use Tool &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Document Tools -->
+            <section class="tool-section my-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">📄 Document Tools</h2>
+                <p class="text-gray-500 mt-2">Manage your PDFs and other documents with ease.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Document-Arrow-Down -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 17.75l-6-6.75 6-6.75" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22.75l-6-6.75 6-6.75" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2.75h10v12h-10" />
+                        </svg>
+                        <h3 class="text-lg font-bold text-gray-800">PDF to Word</h3>
+                        <p class="text-gray-500 text-sm mt-1">Convert PDF files to editable Word documents.</p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:text-blue-800 transition duration-200">Use Tool &rarr;</a>
+                    </div>
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Folder -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-5l-2-2H5a2 2 0 00-2 2z" />
+                        </svg>
+                        <h3 class="text-lg font-bold text-gray-800">PDF Compressor</h3>
+                        <p class="text-gray-500 text-sm mt-1">Reduce the file size of your PDF documents.</p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:text-blue-800 transition duration-200">Use Tool &rarr;</a>
+                    </div>
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Pencil-Square -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.864 20.575 8.007 15.342a2.75 2.75 0 01-1.233-3.173l.702-2.509a2.75 2.75 0 00-1.174-2.851L2.315 6.703a2.75 2.75 0 00-1.063 2.754l.702 2.509a2.75 2.75 0 01-1.233 3.173L7.993 21.657a2.75 2.75 0 002.269 1.148h.737a2.75 2.75 0 002.269-1.148zM17.383 5.73l6.65-1.238a1.5 1.5 0 012.087 1.122l1.273 7.37a1.5 1.5 0 01-1.121 2.087l-6.65 1.238a1.5 1.5 0 00-1.043 1.884l1.243 4.46c.597 2.155-2.528 3.655-4.04 2.26l-3.363-3.027a1.5 1.5 0 00-1.782 0l-3.363 3.027c-1.512 1.395-4.637-0.105-4.04-2.26l1.243-4.46a1.5 1.5 0 00-1.043-1.884l-6.65-1.238a1.5 1.5 0 01-1.121-2.087l1.273-7.37a1.5 1.5 0 012.087-1.122l6.65 1.238a1.5 1.5 0 001.043-1.884L4.106 4.484c1.512-1.395 4.637.105 4.04 2.26L6.888 9.187a1.5 1.5 0 001.043 1.884l7.567 1.414a1.5 1.5 0 001.043-1.884L14.118 5.637c1.512-1.395 4.637.105 4.04 2.26z" />
+                        </svg>
+                        <h3 class="text-lg font-bold text-gray-800">eSign PDF</h3>
+                        <p class="text-gray-500 text-sm mt-1">Sign your PDF documents electronically.</p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:text-blue-800 transition duration-200">Use Tool &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Calculator Tools -->
+            <section class="tool-section my-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">🧮 Calculator Tools</h2>
+                <p class="text-gray-500 mt-2">Perform various calculations for finance, health, and more.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Calculator -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10a3 3 0 013 3v6a3 3 0 01-3 3H6a3 3 0 01-3-3v-6a3 3 0 013-3h9zM7 8a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H7a1 1 0 01-1-1V8zm0 4a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-1zm6-4a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1h-1a1 1 0 01-1-1V8zm0 4a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1h-1a1 1 0 01-1-1v-1zm-6 8a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-1zm0 4a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-1zm6 4a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1h-1a1 1 0 01-1-1v-1zm0 4a1 1 0 011-1h1a1 1 0 011 1v1a1 1 0 01-1 1h-1a1 1 0 01-1-1v-1z" />
+                        </svg>
+                        <h3 class="text-lg font-bold text-gray-800">Loan EMI Calculator</h3>
+                        <p class="text-gray-500 text-sm mt-1">Calculate your equated monthly installments.</p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:text-blue-800 transition duration-200">Use Tool &rarr;</a>
+                    </div>
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Heart -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.058-4.5-4.593-4.5c-1.37.002-2.694.677-3.638 1.756-1.152-1.08-2.395-1.756-3.638-1.756-2.535 0-4.593 2.015-4.593 4.5c0 1.915 1.013 3.687 2.145 4.745l4.45 4.073c.291.267.709.267 1 0l4.45-4.073c1.132-1.058 2.145-2.83 2.145-4.745z" />
+                        </svg>
+                        <h3 class="text-lg font-bold text-gray-800">BMI Calculator</h3>
+                        <p class="text-gray-500 text-sm mt-1">Check your Body Mass Index.</p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:text-blue-800 transition duration-200">Use Tool &rarr;</a>
+                    </div>
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Currency-Dollar -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.75a5.25 5.25 0 013.75 9m-7.5 0a5.25 5.25 0 013.75-9m-3.75 9a5.25 5.25 0 003.75 9m-7.5-3.75c.632 0 1.255-.154 1.804-.436m3.035-2.729c-.632 0-1.255.154-1.804.436m0-1.756h1.036a1.5 1.5 0 011.146 1.553c-.234.751-.707 1.374-1.284 1.711a3.75 3.75 0 01-1.804.436" />
+                        </svg>
+                        <h3 class="text-lg font-bold text-gray-800">Currency Converter</h3>
+                        <p class="text-gray-500 text-sm mt-1">Convert between different currencies.</p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:text-blue-800 transition duration-200">Use Tool &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Text Tools -->
+            <section class="tool-section my-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">🔤 Text Tools</h2>
+                <p class="text-gray-500 mt-2">Manipulate and analyze your text with these handy tools.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Text-Height -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2v16m0 0v-4.75A2.25 2.25 0 0110.25 13h3.5a2.25 2.25 0 012.25 2.25V20m0 0a2.25 2.25 0 002.25 2.25h3.5a2.25 2.25 0 002.25-2.25V6.5A2.25 2.25 0 0017.25 4.25h-3.5a2.25 2.25 0 00-2.25 2.25V8" />
+                        </svg>
+                        <h3 class="text-lg font-bold text-gray-800">Text Case Converter</h3>
+                        <p class="text-gray-500 text-sm mt-1">Convert text to different cases.</p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:text-blue-800 transition duration-200">Use Tool &rarr;</a>
+                    </div>
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Hashtag -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-3.75 0h18M16.5 10.5V19.5a1.5 1.5 0 01-1.5 1.5h-8.25a1.5 1.5 0 01-1.5-1.5V10.5m3.75-2.25a3.75 3.75 0 00-7.5 0" />
+                        </svg>
+                        <h3 class="text-lg font-bold text-gray-800">Word & Character Counter</h3>
+                        <p class="text-gray-500 text-sm mt-1">Count words and characters in your text.</p>
+                        <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:text-blue-800 transition duration-200">Use Tool &rarr;</a>
+                    </div>
+                    <div class="tool-card bg-white p-6 rounded-lg shadow-md">
+                        <!-- Heroicons: Trash -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6
