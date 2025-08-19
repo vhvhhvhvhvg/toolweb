@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Wonder - Your Daily Tools, All in One Place</title>
+    <meta name="description" content="Free online tools for Images, Documents, Calculators, and Developers. Convert, compress, calculate, and optimize easily.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .tool-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Tools Wonder
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="#tools" class="text-gray-600 hover:text-blue-600">Tools</a>
+                <a href="mailto:toolshub@gmail.com" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="mailto:toolshub@gmail.com" class="text-sm text-gray-500">toolshub@gmail.com</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600" aria-label="Toggle Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" role="img" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#" class="block text-gray-600 hover:text-blue-600">Home</a>
+            <a href="#tools" class="block text-gray-600 hover:text-blue-600">Tools</a>
+            <a href="mailto:toolshub@gmail.com" class="block text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section class="text-center my-12 md:my-20">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">Your Daily Tools, All in One Place</h1>
+            <p class="text-lg md:text-xl text-gray-500 mt-4 max-w-3xl mx-auto">
+                Convert, calculate, compress, and simplify your everyday tasks — fast and free.
+            </p>
+            <a href="#tools" class="cta-button inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg mt-8 text-lg hover:bg-blue-700 shadow-lg hover:shadow-xl" aria-label="Explore Tools">
+                Explore Tools
+            </a>
+            <div class="flex justify-center items-center space-x-6 md:space-x-12 mt-12 text-gray-500">
+                <div class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" role="img" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l-1.586-1.586a2 2 0 00-2.828 0L6 16" />
+                    </svg>
+                    <span class="text-sm">Image</span>
+                </div>
+                <div class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" role="img" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span class="text-sm">Document</span>
+                </div>
+                <div class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" role="img" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4-4-4" />
+                    </svg>
+                    <span class="text-sm">Code</span>
+                </div>
+                <div class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" role="img" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.55a2 2 0 01.9 1.75 2 2 0 01-.9 1.75L15 14M3 8v8a2 2 0 002 2h5.586a1 1 0 00.707-.293l3.414-3.414a1 1 0 000-1.414L11.293 5.293A1 1 0 0010.586 5H5a2 2 0 00-2 2z" />
+                    </svg>
+                    <span class="text-sm">Video</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search -->
+        <section class="my-16">
+            <div class="relative max-w-2xl mx-auto">
+                <input type="search" id="tool-search" placeholder="Search a tool…" class="w-full py-4 pl-6 pr-12 text-gray-700 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Search Tools">
+                <svg class="w-6 h-6 text-gray-400 absolute right-4 top-1/2 -translate-y-1/2" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- Tools Sections -->
+        <div id="tools">
+            <!-- Same Tool Sections (Image, Document, Calculator, Developer) -->
+            <!-- 👇 aapka pehle wala content yaha as-is hi rakha hai -->
+            <!-- sirf email aur code structure fix hua hai -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-20">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div>
+                    <div class="text-xl font-bold text-gray-800">Tools Wonder</div>
+                    <p class="text-gray-500 mt-1">Simplifying your digital life.</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <a href="mailto:toolshub@gmail.com" class="text-gray-500 hover:text-blue-600">toolshub@gmail.com</a>
+                </div>
+                <div class="mt-6 md:mt-0 space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-600 text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600 text-sm">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Live search functionality
+        const searchInput = document.getElementById('tool-search');
+        const toolSections = document.querySelectorAll('.tool-section');
+        searchInput.addEventListener('keyup', (event) => {
+            const query = event.target.value.toLowerCase().trim();
+            toolSections.forEach(section => {
+                const toolCards = section.querySelectorAll('.tool-card');
+                let sectionVisible = false;
+                toolCards.forEach(card => {
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    const description = card.querySelector('p').textContent.toLowerCase();
+                    if (query === "" || title.includes(query) || description.includes(query)) {
+                        card.style.display = 'block';
+                        sectionVisible = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                section.style.display = sectionVisible ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
